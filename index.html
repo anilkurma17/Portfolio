@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
-<body>
+<body>    
     <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="container">
@@ -37,6 +37,8 @@
     <!-- About Section -->
     <section id="about" class="section">
         <div class="container">
+            <br>
+            </br>
             <h2>About Me</h2>
             <p>Hello! I'm Kurma Anil Kumar, currently pursuing a Master's degree and looking to embark on an exciting career as a software developer. I am passionate about coding, problem-solving, and creating innovative software solutions. Throughout my academic journey, I have developed a strong foundation in programming, algorithms, and software development practices.
 
@@ -47,6 +49,8 @@ I am eager to apply my skills in a dynamic environment where I can continue to l
     <!-- Education Section -->
      <section id="education" class="section">
         <div class="container">
+            <br>
+            </br>
             <h2>Education</h2>
             <div class="card">
                 <h3>Lovely Professional University</h3>
@@ -66,6 +70,8 @@ I am eager to apply my skills in a dynamic environment where I can continue to l
      <!-- Experience Section -->
     <section id="experience" class="section">
         <div class="container">
+            <br>
+            </br>
             <h2>Experience</h2>
             <div class="card">
                 <h3>SDET - Bebo Technologies Pvt Ltd</h3>
@@ -86,6 +92,8 @@ I am eager to apply my skills in a dynamic environment where I can continue to l
     </section>
     <section id="experience" class="section">
         <div class="container">
+            <br>
+            </br>
             <h2>Skills</h2>
             <div class="card">
                 <ul>
@@ -108,6 +116,8 @@ I am eager to apply my skills in a dynamic environment where I can continue to l
   <!-- Projects Section -->
 <section id="projects" class="section">
     <div class="container">
+        <br>
+            </br>
         <h2>Projects</h2>
         <!-- Project 1 -->
         <div class="card">
@@ -126,19 +136,14 @@ I am eager to apply my skills in a dynamic environment where I can continue to l
         <!-- Additional Projects -->
     </div>
 </section>
-<section id="about" class="section">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Hello! I'm Kurma Anil Kumar, currently pursuing a Master's degree and looking to embark on an exciting career as a software developer. I am passionate about coding, problem-solving, and creating innovative software solutions. Throughout my academic journey, I have developed a strong foundation in programming, algorithms, and software development practices.
 
-I am eager to apply my skills in a dynamic environment where I can continue to learn and grow. I am particularly interested in contributing to projects that make a meaningful impact and enjoy collaborating with teams to bring creative ideas to life.</p>
-        </div>
-    </section>
 
 
     <!-- Contact Section -->
     <section id="contact" class="section">
         <div class="container">
+            <br>
+            </br>
             <h2>Contact Me</h2>
             <p class="mail">Feel free to reach out via email: <a href="mailto:anilkurma444@gmail.com">anilkurma444@gmail.com</a></p>
            
@@ -152,5 +157,18 @@ I am eager to apply my skills in a dynamic environment where I can continue to l
             <p>&copy; 2024 Anil Kumar. All rights reserved.</p>
         </div>
     </footer>
+    <!-- JavaScript -->
+    <script>
+        const navLinks = document.querySelectorAll('.nav-links li a');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                // Remove 'active' class from all links
+                navLinks.forEach(nav => nav.classList.remove('active'));
+                // Add 'active' class to the clicked link
+                this.classList.add('active');
+            });
+        });
+    </script>
 </body>
 </html>
